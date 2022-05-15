@@ -1,3 +1,4 @@
+import sys
 class Person(object):
     def __init__(self) -> None:
         self.name = 'alex'
@@ -17,4 +18,12 @@ class Person(object):
 
 p = Person()
 p.greet()
-p.write('hello alex')
+print(sys.getrefcount(p))
+# p.write('hello alex')
+
+
+# def test():
+#     print("hello")
+
+# a = test()
+# print(sys.getrefcount(a))
