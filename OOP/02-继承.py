@@ -3,10 +3,6 @@
 ###继承###
 ###先在子类中找方法，再从父类中找方法###
 
-from cgi import print_arguments
-from codecs import getencoder
-from msilib.schema import Class
-
 
 class Person(object):
     def __init__(self,name,age,gender='MALE') -> None:
