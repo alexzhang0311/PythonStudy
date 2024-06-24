@@ -96,6 +96,7 @@ def getinfo(lock,location,page):
     outcome["unitprice"] = unitpriceList
 
     data = pd.DataFrame(outcome)
+
     print(data)
     
     lock.acquire()
